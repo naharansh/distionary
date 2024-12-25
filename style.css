@@ -1,0 +1,91 @@
+:root
+{
+    --wid:100vw;
+}
+*
+{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body
+{
+    width: var(--wid);
+}
+header
+{
+    padding: 20px;
+    background-color: #26de81;
+    color: white;
+    /* margin: 10px auto; */
+}
+header h1
+{
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+main
+{
+    min-height: 80vh;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+main form
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+input[type="text"],button[type="submit"]
+{
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: calc(20px/2);
+}
+input[type='text']
+{
+    flex-grow: 1;
+}
+button[type="submit"]
+{
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #26de81;
+    color: white;
+}
+.result
+{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.result p
+{
+    margin-top: 10px;
+
+}
+.result p[class="part"]
+{
+    font-style: italic;
+    color: #808080;
+    margin-top: 2px;
+}
+.result div a
+{
+    text-decoration: none;
+    color: white;
+    background-color:green;
+    padding: 3px;
+    border-radius: 10px;
+}
+.result li
+{
+    padding: calc(20px/6);
+    margin-left: 20px;
+}
